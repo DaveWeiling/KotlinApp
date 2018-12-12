@@ -1,0 +1,11 @@
+apply from: rootProject.file("gradle/module-config.gradle")
+apply from: rootProject.file("gradle/merge-module.gradle")
+apply plugin: 'com.pdog.manifest-clipper'
+
+android {
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+        applicationId "com.android.learn.kotlin.app"
+    }
+}
